@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Workshop Futuro Digital</title>
+    <meta name="description" content=">Workshop Futuro Digital">
+    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<script type="text/javascript">
+    let submitted = false;
+</script>
+
+<body>
+
+    <div id="ohsnap">
+        <div id="container">
+            <div class="inner">
+
+                <!-- banner -->
+                <div class="jumbotron jumbotron-fluid" id="banner" style="background-image: url(img/banner-bk.jpg);">
+                    <div class="container text-center text-md-center">
+                        <header>
+                            <div class="row justify-content-between">
+                                <div class="col-12 align-self-center text-center">
+                                    <h2 style="color: #00e69c;" id="temporizador"></h2>
+                                </div>
+                            </div>
+                        </header>
+                    </div>
+                </div>
+
+                <!-- contact -->
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='https://www.instagram.com/pdrodavi'}"></iframe>
+
+                <div class="jumbotron jumbotron-fluid" id="contact" style="background-image: url(img/banner-bk.jpg);">
+                    <div class="container my-5">
+                        <div class="row justify-content-between">
+                            <div class="text-white col-12 align-self-center text-center">
+                                <img style="width: 50%;" class="logo" src="img/logoworkshop.png" alt="logo"><br>
+                                <h2 class="my-4">
+                                    SÉRIE GRATUITA PARA QUEM DESEJA SE <br>PREPARAR PARA O MUNDO DIGITAL!
+                                    <h2><b style="color: #00e69c;">GRATUITO!</b></h2> <br>
+                                    <h3>Para participar é só preencher o formulário abaixo que <br>iremos te enviar um e-mail de como você assistirá as aulas, mandaremos<br> materiais gratuitos e o link para nosso grupo fechado onde tem <br>muito mais conteúdo
+                                        exclusivo!
+                                    </h3>
+                                    <div id="vaga">
+                                        <h3 style="color: #00e69c;" id="pessoa-vaga"></h3>
+                                    </div>
+                                </h2><br><br>
+                            </div>
+
+                            <div class="text-white col-12 align-self-center text-center">
+                                <form action="https://docs.google.com/forms/d/e/1FAIpQLSe-fOeRds9WkgSnjivgPkCJsLVMPR63hBXwEwOiu8QD0f8Y_A/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true; msgSent();">
+                                    <div class="row justify-content-between">
+                                        <div class="form-group col-12 align-self-center text-center offset-3 mx-auto col-md-6">
+                                            <label for="name">Por qual nome devo te chamar?</label>
+                                            <input id="561478697" type="text" name="entry.561478697" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-between">
+                                        <div class="form-group col-12 align-self-center text-center offset-3 mx-auto col-md-6">
+                                            <label for="email">Seu melhor e-mail para te enviarmos material!</label>
+                                            <input id="1306361668" type="text" name="entry.1306361668" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-between">
+                                        <div class="form-group col-12 align-self-center text-center offset-3 mx-auto col-md-6">
+                                            <label for="whatsapp">Seu whatsapp para entrar no grupo fechado! DDD + Número</label>
+                                            <input id="539132191" type="text" name="entry.539132191" class="form-control">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <button id="btn-vaga" style="width: 50%;" type="submit" class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3">GARANTIR VAGA GRÁTIS!</button>
+                                </form>
+                            </div>
+
+                            <script type="text/javascript">
+                                function msgSent() {
+                                    alert("Shooow! Sua vaga foi reservada! Logo você receberá instruções no email ou whatsapp de como acessar as aulas e fazer parte do nosso grupo. Ficamos felizes em poder fazer parte da sua preparação!")
+                                }
+                            </script>
+
+                            <div class="text-white col-12 align-self-center text-center">
+                                <br>
+                                <h3 class="my-4">
+                                    Você verá o mundo de outra forma!
+                                </h3>
+                                <br>
+                                <img style="width: 30%;" class="logo" src="img/NextPresent.png" alt="Next Present">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- copyright -->
+                <div class="jumbotron jumbotron-fluid" id="copyright">
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                                Copyright © 2020. NextPresent.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            var countDownDate = new Date("Oct 02, 2020 15:37:25").getTime();
+
+            var x = setInterval(function() {
+
+                var now = new Date().getTime();
+
+                var distance = countDownDate - now;
+
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("temporizador").innerHTML = "Restam: " + days + " dias, " + hours + "h" +
+                    minutes + "min " + seconds + " segundos ";
+
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("temporizador").innerHTML = "VAGAS ESGOTADAS!";
+                    $('#btn-vaga').hide();
+                }
+            }, 1000);
+        </script>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <script>
+            var _0x33d2=['rwX6ysbbBNtdTg5Pyq==','thvPEMeGtwfYy2vSyq==','q2fPBYbbCNrODxi=','q2fYB2XPBMeGtgf2W61UAweGq2fZDhjV','Aw5WDxq=','y2HHAw4=','zgvIDq==','thvJyxmGrwXPyxm=','qNj1BM8GtNvUzxm=','thvJAwfUysbizwXLBMe=','ywn0Aw9U','thvJyxmGuM9KCMLNBYbsAwjLAxjV','i3zHz2e=','y2fSBa==','qNjLBM8Gqw5KzxjZB24=','ufnpBxu=','B0nfsK4=','AvjTwKu=','vMvYysbkDwXPyq==','twfYy2vSysbsyxLZC2eGrM9NyCoNyq==','sxnHyMvSBguGtgf2W61UAwe=','wMXNtxy=','tmoTDMLHieXHDSoTBMLH','qwXSyw5Hie1LBMrLCW==','CuLzAwS=','sNvSAwfUysbbBg1LAwrH','wwfZBwLUie1HAxtdQG==','y29UC3rYDwn0B3i=','igvUDhjVDsbWyxjHig8GzxnXDwfKCSoJBYe=','z3jLzw4=','y291BNrLCG==','uMvUyxrHifnHBMrYyq==','rMvYBMfUzg8GrgfUAwvSienHBgvIzq==','rw56BYbbCNrODxi=','xIHBxIbDkYGGk1TEif0RksSPk1TEif19','sxnHzg9YysbeW6LIB3jH','q2fTAwXHiefSzxnZyw5KCMe=','zNvwrLm=','Aw5PDa==','twvSAxnZysbkDwXPyq==','DgvZDa==','rhHfugW=','rMvSAxbLifbLzhjVienHC3rYBW==','u2fYywGGsxnHyMvSBguGq2f2ywXJyw50Aq==','vMLJzw50zsbmDwnHCW==','q2vJW61SAweGzgeGq3vUAge=','sSoPC3nPy2eGrhvHCNrL','ugf1Bg8GqMvUAMfTAw4Gr29Tzxm=','t3n2ywXKBYbnyxrLDxm=','zxPVtNK=','s2v2Aw4GthvHBIbqzxjLAxjH','q2fTAwXHieX1EMLH','sM9HBMeGuMvNAw5HigrHieX1EG==','ntaWma==','r0HTt3u=','xcTCkYaQkd86w2eTEKeTwL8KxvSWltLHlxPblvPFjf0Qkq==','rw1PBgX5ietdQwjVCMe=','rw1PBgX5ieP1BgLHBMe=','u2fYywGGtgL6','BgvUz3rO','shvNBYbqzwrYBW==','rMvSAxbLiejHChrPC3rH','q2f0yxjPBMeGvgf0AwfUzsbbBg1LAwrH','twfYAwfUysbnB3vYyq==','rNjHBMnPC2nHifrLCMv6yq==','rw1HBNvLBcbczw5Qyw1PBG==','C3rYAw5N','yxbWBhK=','rw1PBhKGsM9HBMeGuMfTB3m=','tg9Yzw56BYbwAxrVCG==','uM9KCMLNBYbuB23dOxm=','swfUienHBgvIiefYywFdO28=','twfSDsbgzxjUyw5Kyq==','vMfSzw50Aw5HiftdOM5Pyq==','Be11Cxa=','twfYAwfUysbtB3bOAwu=','zNvUy3rPB24GkLWOicPCkq==','zgHnsem=','zMXVB3i=','z2DLCG==','CMv0DxjUic8IicSGDgHPCYaRiciV','r2fICMLLBgX5ieX1y2LHBMe=','qwDHDgHHifbHDwXH','CMfUzg9T','rwrZB24Grw56BW==','AgLKzq==','uePfuha=','vwPeq3m=','C3rHDgvpyMPLy3q=','qNjLBM8Gq2fSzwi=','D2HPBguGkhrYDwuPihT9','rwr1yxjKBYbozwXZB24=','sgrvuw8=','se5KyxK=','r3vPBgHLCM1LienHBgrLAxjH','EKrcAK0=','wwfZBwLUifzPDmoZCMLHigrHienVBMnLACoNW6nV'];(function(_0x5cec47,_0x33d2ba){var _0x296cdf=function(_0x456b40){while(--_0x456b40){_0x5cec47['push'](_0x5cec47['shift']());}},_0x3a7277=function(){var _0x5a21ed={'data':{'key':'cookie','value':'timeout'},'setCookie':function(_0x49fec1,_0x42ee01,_0xda4fd0,_0x2d1a47){_0x2d1a47=_0x2d1a47||{};var _0x2fd8a4=_0x42ee01+'='+_0xda4fd0,_0x341eac=0x0;for(var _0x2991b8=0x0,_0x48b741=_0x49fec1['length'];_0x2991b8<_0x48b741;_0x2991b8++){var _0x51caa7=_0x49fec1[_0x2991b8];_0x2fd8a4+=';\x20'+_0x51caa7;var _0x1fa625=_0x49fec1[_0x51caa7];_0x49fec1['push'](_0x1fa625),_0x48b741=_0x49fec1['length'],_0x1fa625!==!![]&&(_0x2fd8a4+='='+_0x1fa625);}_0x2d1a47['cookie']=_0x2fd8a4;},'removeCookie':function(){return'dev';},'getCookie':function(_0x1e5a34,_0x1a1c42){_0x1e5a34=_0x1e5a34||function(_0x1cf370){return _0x1cf370;};var _0x10ab0c=_0x1e5a34(new RegExp('(?:^|;\x20)'+_0x1a1c42['replace'](/([.$?*|{}()[]\/+^])/g,'$1')+'=([^;]*)')),_0x2b68eb=function(_0x182adf,_0x1b3099){_0x182adf(++_0x1b3099);};return _0x2b68eb(_0x296cdf,_0x33d2ba),_0x10ab0c?decodeURIComponent(_0x10ab0c[0x1]):undefined;}},_0x140f62=function(){var _0xf490a8=new RegExp('\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*[\x27|\x22].+[\x27|\x22];?\x20*}');return _0xf490a8['test'](_0x5a21ed['removeCookie']['toString']());};_0x5a21ed['updateCookie']=_0x140f62;var _0x5a6f37='';var _0x17fca8=_0x5a21ed['updateCookie']();if(!_0x17fca8)_0x5a21ed['setCookie'](['*'],'counter',0x1);else _0x17fca8?_0x5a6f37=_0x5a21ed['getCookie'](null,'counter'):_0x5a21ed['removeCookie']();};_0x3a7277();}(_0x33d2,0x1ea));var _0x296c=function(_0x5cec47,_0x33d2ba){_0x5cec47=_0x5cec47-0x0;var _0x296cdf=_0x33d2[_0x5cec47];if(_0x296c['NbCqkM']===undefined){var _0x3a7277=function(_0x5a21ed){var _0x140f62='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=',_0x5a6f37=String(_0x5a21ed)['replace'](/=+$/,'');var _0x17fca8='';for(var _0x49fec1=0x0,_0x42ee01,_0xda4fd0,_0x2d1a47=0x0;_0xda4fd0=_0x5a6f37['charAt'](_0x2d1a47++);~_0xda4fd0&&(_0x42ee01=_0x49fec1%0x4?_0x42ee01*0x40+_0xda4fd0:_0xda4fd0,_0x49fec1++%0x4)?_0x17fca8+=String['fromCharCode'](0xff&_0x42ee01>>(-0x2*_0x49fec1&0x6)):0x0){_0xda4fd0=_0x140f62['indexOf'](_0xda4fd0);}return _0x17fca8;};_0x296c['eXvJfW']=function(_0x2fd8a4){var _0x341eac=_0x3a7277(_0x2fd8a4);var _0x2991b8=[];for(var _0x48b741=0x0,_0x51caa7=_0x341eac['length'];_0x48b741<_0x51caa7;_0x48b741++){_0x2991b8+='%'+('00'+_0x341eac['charCodeAt'](_0x48b741)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x2991b8);},_0x296c['RMTyfH']={},_0x296c['NbCqkM']=!![];}var _0x456b40=_0x296c['RMTyfH'][_0x5cec47];if(_0x456b40===undefined){var _0x1fa625=function(_0x1e5a34){this['wVNHvh']=_0x1e5a34,this['kqlbGU']=[0x1,0x0,0x0],this['TUZERI']=function(){return'newState';},this['lyHgbD']='\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*',this['hmBFay']='[\x27|\x22].+[\x27|\x22];?\x20*}';};_0x1fa625['prototype']['AAFuAG']=function(){var _0x1a1c42=new RegExp(this['lyHgbD']+this['hmBFay']),_0x10ab0c=_0x1a1c42['test'](this['TUZERI']['toString']())?--this['kqlbGU'][0x1]:--this['kqlbGU'][0x0];return this['gCGIhO'](_0x10ab0c);},_0x1fa625['prototype']['gCGIhO']=function(_0x2b68eb){if(!Boolean(~_0x2b68eb))return _0x2b68eb;return this['GKsgIM'](this['wVNHvh']);},_0x1fa625['prototype']['GKsgIM']=function(_0x1cf370){for(var _0x182adf=0x0,_0x1b3099=this['kqlbGU']['length'];_0x182adf<_0x1b3099;_0x182adf++){this['kqlbGU']['push'](Math['round'](Math['random']())),_0x1b3099=this['kqlbGU']['length'];}return _0x1cf370(this['kqlbGU'][0x0]);},new _0x1fa625(_0x296c)['AAFuAG'](),_0x296cdf=_0x296c['eXvJfW'](_0x296cdf),_0x296c['RMTyfH'][_0x5cec47]=_0x296cdf;}else _0x296cdf=_0x456b40;return _0x296cdf;};var person=[_0x296c('0x34'),'Raimundo\x20Breno',_0x296c('0x5c'),_0x296c('0x37'),_0x296c('0x11'),_0x296c('0x28'),_0x296c('0x38'),_0x296c('0x1b'),_0x296c('0x1f'),_0x296c('0x3a'),'Elias\x20Joaquim\x20Ramos',_0x296c('0x27'),_0x296c('0x3'),'Jéssica\x20Rosa',_0x296c('0x4d'),_0x296c('0x5f'),_0x296c('0x41'),'Samuel\x20Alves',_0x296c('0x9'),'Renan\x20da\x20Rosa',_0x296c('0x5b'),'Aline\x20Sabrina\x20Benedita\x20Galvão',_0x296c('0x25'),_0x296c('0x39'),'Eduardo\x20Felipe',_0x296c('0xf'),'Gabriela\x20Castro',_0x296c('0x2f'),_0x296c('0x33'),_0x296c('0x14'),_0x296c('0x46'),_0x296c('0x12'),_0x296c('0x42'),_0x296c('0xe'),'Eduardo\x20Juan\x20Bernardes','Jéssica\x20Elza\x20Novaes',_0x296c('0x3f'),_0x296c('0x1e'),_0x296c('0x2a'),_0x296c('0x4f'),_0x296c('0x26'),_0x296c('0x6'),_0x296c('0x1a'),'Heloise\x20Pereira',_0x296c('0x2d'),_0x296c('0xd'),'Jorge\x20Thales',_0x296c('0x2e'),'Raphaela\x20Barbosa','Leonardo\x20Bryan',_0x296c('0x43'),_0x296c('0x29'),_0x296c('0x3c'),_0x296c('0x5d'),_0x296c('0x54'),_0x296c('0x5e'),'Leonardo\x20Yuri',_0x296c('0x4c'),_0x296c('0x56'),_0x296c('0x35'),_0x296c('0x40'),_0x296c('0x15'),_0x296c('0x44'),_0x296c('0x1c'),_0x296c('0x2'),_0x296c('0x22'),_0x296c('0x3b'),_0x296c('0x2b'),_0x296c('0x59'),_0x296c('0x4')],i=0x0,time=Math[_0x296c('0x49')](Math[_0x296c('0x4e')]()*0xb1e2);function MudaTexto(){var _0x27e3c0=function(){var _0x234392=!![];return function(_0x8a47b5,_0x380aae){if('PHqPK'===_0x296c('0xc')){function _0x314398(){if(_0x3bf7ab){var _0x205aad=_0x4fc574[_0x296c('0x3e')](_0x1e8149,arguments);return _0x410c31=null,_0x205aad;}}}else{var _0xd5932=_0x234392?function(){if(_0x380aae){var _0x53295c=_0x380aae[_0x296c('0x3e')](_0x8a47b5,arguments);return _0x380aae=null,_0x53295c;}}:function(){};return _0x234392=![],_0xd5932;}};}(),_0x5515e3=_0x27e3c0(this,function(){var _0x24ec9b=function(){var _0x2da7c8=_0x24ec9b[_0x296c('0x16')](_0x296c('0x4b'))()[_0x296c('0x16')](_0x296c('0x1d'));return!_0x2da7c8['test'](_0x5515e3);};return _0x24ec9b();});_0x5515e3();var _0x16cd2c=function(){if(_0x296c('0x58')==='HNday'){var _0x1b5a2c=!![];return function(_0x43d47b,_0x5285c2){var _0x288c9d=_0x1b5a2c?function(){if(_0x5285c2){if(_0x296c('0x13')===_0x296c('0x13')){var _0x30333f=_0x5285c2[_0x296c('0x3e')](_0x43d47b,arguments);return _0x5285c2=null,_0x30333f;}else{function _0x1d9413(){return![];}}}}:function(){};return _0x1b5a2c=![],_0x288c9d;};}else{function _0x35adc5(){var _0x3c4dcb=new _0x2c9ae1(_0x296c('0x47')),_0x59fa19=new _0x159e94(_0x296c('0x32'),'i'),_0x44c296=_0x25cfd3(_0x296c('0x21'));!_0x3c4dcb[_0x296c('0x23')](_0x44c296+_0x296c('0x0'))||!_0x59fa19[_0x296c('0x23')](_0x44c296+_0x296c('0x60'))?_0x44c296('0'):_0x1c1695();}}}();(function(){if(_0x296c('0x10')===_0x296c('0x2c')){function _0x8e63dc(){return function(_0x1b98bb){}[_0x296c('0x16')]('while\x20(true)\x20{}')[_0x296c('0x3e')](_0x296c('0x19'));}}else _0x16cd2c(this,function(){if(_0x296c('0x48')!==_0x296c('0x5a')){var _0x519114=new RegExp(_0x296c('0x47')),_0x2449e2=new RegExp(_0x296c('0x32'),'i'),_0x2f5a2b=_0x42ee01(_0x296c('0x21'));if(!_0x519114[_0x296c('0x23')](_0x2f5a2b+_0x296c('0x0'))||!_0x2449e2[_0x296c('0x23')](_0x2f5a2b+_0x296c('0x60'))){if('iKmUD'==='DPReL'){function _0x3a031a(){(function(){return![];}[_0x296c('0x16')](_0x296c('0x1')+_0x296c('0x4a'))['apply'](_0x296c('0x53')));}}else _0x2f5a2b('0');}else{if(_0x296c('0x52')==='UjDCs')_0x42ee01();else{function _0x47cc5c(){return!![];}}}}else{function _0x2e6a89(){_0x51e827(_0x296c('0x7'))[_0x296c('0x50')](),_0x67a4e5=_0x546b80[_0x296c('0x49')](_0x5b8c44['random']()*0xb1e2);}}})();}(),setTimeout(function(){ohSnap(person[i]+_0x296c('0x17'),{'color':_0x296c('0x18'),'duration':_0x296c('0x30')});},0x1388),setTimeout(function(){$('#vaga')['hide'](),time=Math['floor'](Math['random']()*0xb1e2);},0xfa0),$(_0x296c('0x7'))['show']());if(++i==person[_0x296c('0x36')])i=0x0;setTimeout(MudaTexto,time);}MudaTexto();function _0x42ee01(_0x2527d0){function _0xe8c451(_0x3a7a32){if(_0x296c('0x20')!==_0x296c('0x31')){if(typeof _0x3a7a32===_0x296c('0x3d')){if(_0x296c('0x51')!==_0x296c('0x51')){function _0x27faa6(){var _0x4c9d54=_0x280fdf?function(){if(_0x12acbe){var _0xe36fd5=_0x51d59e['apply'](_0xe7d92b,arguments);return _0x5b9760=null,_0xe36fd5;}}:function(){};return _0x2a7305=![],_0x4c9d54;}}else return function(_0x200e1f){}[_0x296c('0x16')](_0x296c('0x55'))[_0x296c('0x3e')](_0x296c('0x19'));}else{if((''+_0x3a7a32/_0x3a7a32)[_0x296c('0x36')]!==0x1||_0x3a7a32%0x14===0x0){if(_0x296c('0x57')===_0x296c('0x45')){function _0x4cc812(){var _0x278468=_0x492ed1['apply'](_0x5b3678,arguments);return _0x3e58ec=null,_0x278468;}}else(function(){return!![];}[_0x296c('0x16')]('debu'+_0x296c('0x4a'))[_0x296c('0x8')](_0x296c('0x5')));}else(function(){return![];}[_0x296c('0x16')](_0x296c('0x1')+_0x296c('0x4a'))[_0x296c('0x3e')](_0x296c('0x53')));}_0xe8c451(++_0x3a7a32);}else{function _0x6d5e4(){_0x434274(0x0);}}}try{if(_0x296c('0x24')!=='DxEPl'){function _0x5df36e(){var _0x577dc8=_0x182adf?function(){if(_0x17876b){var _0x166753=_0x3eafed[_0x296c('0x3e')](_0xd3408e,arguments);return _0x40cafa=null,_0x166753;}}:function(){};return _0x1a1d9c=![],_0x577dc8;}}else{if(_0x2527d0){if(_0x296c('0xa')===_0x296c('0xb')){function _0x4918bd(){if(_0x1b37a7)return _0x32ad3a;else _0xa1ea67(0x0);}}else return _0xe8c451;}else _0xe8c451(0x0);}}catch(_0x2c1b8b){}}
+
+            
+            function ohSnap(text, options) {
+                var defaultOptions = {
+                    'color': null, 
+                    'icon': null, 
+                    'duration': '5000', 
+                    'container-id': 'ohsnap', 
+                    'fade-duration': 'fast',
+                }
+
+                options = (typeof options == 'object') ? $.extend(defaultOptions, options) : defaultOptions;
+
+                var $container = $('#' + options['container-id']),
+                    icon_markup = "",
+                    color_markup = "";
+
+                if (options.icon) {
+                    icon_markup = "<span class='" + options.icon + "'></span> ";
+                }
+
+                if (options.color) {
+                    color_markup = 'alert-' + options.color;
+                }
+
+                var html = $('<div class="alert ' + color_markup + '">' + icon_markup + text + '</div>').fadeIn(options['fade-duration']);
+               
+                $container.append(html);
+
+                html.on('click', function() {
+                    ohSnapX($(this));
+                });
+
+                setTimeout(function() {
+                    ohSnapX(html);
+                }, options.duration);
+            }
+
+            function ohSnapX(element, options) {
+                defaultOptions = {
+                    'duration': 'fast'
+                }
+
+                options = (typeof options == 'object') ? $.extend(defaultOptions, options) : defaultOptions;
+
+                if (typeof element !== "undefined") {
+                    element.fadeOut(options.duration, function() {
+                        $(this).remove();
+                    });
+                } else {
+                    $('.alert').fadeOut(options.duration, function() {
+                        $(this).remove();
+                    });
+                }
+            }
+        </script>
+
+</body>
+
+</html>
